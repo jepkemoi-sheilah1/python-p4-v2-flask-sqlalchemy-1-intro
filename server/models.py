@@ -5,7 +5,7 @@ from sqlalchemy import MetaData
 metadata = MetaData()
 
 # create the Flask SQLAlchemy extension
-db = SQLAlchemy(metadata=metadata)
+db = SQLAlchemy(metadata=metadata) # we gonna import the db object in the app.py file...this was our flask-sqlalchemy extension
 
 # define a model class by inheriting from db.Model.
 

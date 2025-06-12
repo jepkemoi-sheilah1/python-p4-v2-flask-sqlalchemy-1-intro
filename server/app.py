@@ -15,7 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # create a Migrate object to manage schema modifications
-migrate = Migrate(app, db)
+migrate = Migrate(app, db)#migration setup
 
 # initialize the Flask application to use the database
 db.init_app(app)
